@@ -1,0 +1,84 @@
+.container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.data-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.data-key {
+  flex: 1;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.data-value {
+  flex: 2;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.error-message {
+  text-align: center;
+  color: #ff0000;
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ffe6e6;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .data-key, .data-value {
+    flex: 1 1 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .data-key {
+    background-color: #e0e0e0;
+  }
+}
+.success-message {
+  text-align: center;
+  color: #00241B;
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+.tableclass{
+  font-size: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabledata{
+  text-align: center;
+}
